@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+//import { NavController } from 'ionic-angular';
 import * as Highcharts from 'highcharts';
 import * as HighchartsMore from 'highcharts/highcharts-more';
 import * as SolidGauge from 'highcharts/modules/solid-gauge';
+import { ModalController } from 'ionic-angular';
+import { InfoModalPage } from '../infomodal/infomodal';
 HighchartsMore(Highcharts);
 SolidGauge(Highcharts);
 
@@ -12,9 +14,14 @@ SolidGauge(Highcharts);
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
+ // constructor(public navCtrl: NavController) {
+ // }
+  constructor(public modalCtrl: ModalController) { }
+  
+    openModal() {
+        let myModal = this.modalCtrl.create(InfoModalPage);
+        myModal.present();
+    }
 
   ionViewDidLoad(){
 
@@ -76,9 +83,9 @@ export class HomePage {
       var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptions, {
           yAxis: {
               min: 0,
-              max: 200,
+              max: 200000,
               title: {
-                  text: 'STAGE COST'
+                  text: 'Daily Time Cost'
               }
           },
       
@@ -88,11 +95,11 @@ export class HomePage {
       
           series: [{
               name: 'Speed',
-              data: [80],
+              data: [80000],
               dataLabels: {
                   format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                       ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
-                         '<span style="font-size:12px;color:silver">km/h</span></div>'
+                         '<span style="font-size:12px;color:silver">$</span></div>'
               },
               tooltip: {
                   valueSuffix: ' km/h'
@@ -101,13 +108,13 @@ export class HomePage {
       
       }));
       
-      // The RPM gauge
+      // The pressure gauge
       var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, {
           yAxis: {
               min: 0,
-              max: 5,
+              max: 12000,
               title: {
-                  text: 'RPM'
+                  text: 'Treating Pressure'
               }
           },
       
@@ -117,10 +124,10 @@ export class HomePage {
               dataLabels: {
                   format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                       ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                         '<span style="font-size:12px;color:silver">* 1000 / min</span></div>'
+                         '<span style="font-size:12px;color:silver">psi</span></div>'
               },
               tooltip: {
-                  valueSuffix: ' revolutions/min'
+                  valueSuffix: ' pounds per square inch'
               }
           }]
       
@@ -135,12 +142,8 @@ export class HomePage {
       
           if (chartSpeed) {
               point = chartSpeed.series[0].points[0];
-              inc = Math.round((Math.random() - 0.5) * 100);
+              inc = 3;
               newVal = point.y + inc;
-      
-              if (newVal < 0 || newVal > 200) {
-                  newVal = point.y - inc;
-              }
       
               point.update(newVal);
           }
@@ -148,10 +151,10 @@ export class HomePage {
           // RPM
           if (chartRpm) {
               point = chartRpm.series[0].points[0];
-              inc = Math.random() - 0.5;
+              inc = Math.random()*1000 - 0.5;
               newVal = point.y + inc;
       
-              if (newVal < 0 || newVal > 5) {
+              if (newVal < 0 || newVal > 5000) {
                   newVal = point.y - inc;
               }
       
