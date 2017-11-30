@@ -6,10 +6,73 @@
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
-    Hydraulic Horsepower Cost Structure
-    <div class = "list">
-   <label class = "item item-input item-stacked-label">
+
+
+        
+  <ion-list>
+    Hydraulic HP Cost Structure
+    <ion-item>
+      <ion-label>0-5000:</ion-label>
+      <ion-input type="text" placeholder="($)"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>5000-7500:</ion-label>
+        <ion-input type="text" placeholder="($)"></ion-input>
+      </ion-item>    
+      <ion-item>
+          <ion-label>7500+:</ion-label>
+          <ion-input type="text" placeholder="($)"></ion-input>
+        </ion-item>   
+  </ion-list>
+            
+  <ion-list>
+      Limits
+      <ion-item>
+          <ion-label>Treating Pressure:</ion-label>
+          <ion-input type="text" placeholder="psi"></ion-input>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+      General Cost Per Day Value
+      <ion-item>
+        <ion-label>Slurry Cost Per Unit</ion-label>
+        <ion-input type="text" placeholder="($)"></ion-input>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+      Targets
+      <ion-item>
+        <ion-label>Sand %:</ion-label>
+        <ion-input type="text" placeholder="(%)"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Plug pump rate:</ion-label>
+          <ion-input type="text" placeholder="ft/min"></ion-input>
+        </ion-item>
+  </ion-list>
+  
+  <!-- <div class = "list">
+    <label class = "item item-input">
+      <input type = "text" placeholder = "$" />
+    </label>
+  </div>
+
+  <div class = "list">
+    <label class = "item item-input item-stacked-label">
+        <span class = "input-label">Slurry cost per unit</span>
+        <input type = "text" placeholder = "$" />
+    </label> -->
+  
+      
+
+    <!-- Hydraulic Horsepower Cost Structure -->
+   
+   <!-- <label class = "item item-input item-stacked-label">
       <span class = "input-label">0-5000</span>
       <input type = "text" placeholder = "$" />
    </label>
@@ -19,22 +82,17 @@
       <input type = "text" placeholder = "$" />
       <span class = "input-label">5000-7500</span>
       <input type = "text" placeholder = "$" />
-   </label>
-
+   </label> -->
+<!-- 
    <label class = "item item-input item-stacked-label">
       <span class = "input-label">7500+</span>
       <input type = "text" placeholder = "$" />
-   </label>
-</div>
+   </label> -->
+<!-- </div> -->
 
-    Screenout - Treating Pressure Limit
-    <div class = "list">
-      <label class = "item item-input">
-        <input type = "text" placeholder = "psi" />
-      </label>
-    </div>
 
-    General Cost per Day value
+
+    <!-- General Cost per Day value
     <div class = "list">
       <label class = "item item-input">
         <input type = "text" placeholder = "$" />
@@ -45,8 +103,8 @@
       <label class = "item item-input item-stacked-label">
           <span class = "input-label">Slurry cost per unit</span>
           <input type = "text" placeholder = "$" />
-      </label>
-</div>
+      </label> -->
+<!-- </div> -->
 
 
 </ion-content>
