@@ -13,15 +13,15 @@ SolidGauge(Highcharts);
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+    myParam = '';
  // constructor(public navCtrl: NavController) {
  // }
   constructor(public modalCtrl: ModalController) { }
   
-    openModal() {
-        let myModal = this.modalCtrl.create(InfoModalPage);
-        myModal.present();
-    }
+    openModal(button)  {
+    let myModal = this.modalCtrl.create(InfoModalPage, { 'myParam': '1' });
+    myModal.present();
+  }
 
   ionViewDidLoad(){
 
@@ -79,6 +79,8 @@ export class HomePage {
           }
       };
       
+      
+
       // The speed gauge
       var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptions, {
           yAxis: {
@@ -107,6 +109,8 @@ export class HomePage {
           }]
       
       }));
+
+      
       
       // The pressure gauge
       var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, {
@@ -132,6 +136,8 @@ export class HomePage {
           }]
       
       }));
+
+      
       
       // Bring life to the dials
       setInterval(function () {
@@ -147,7 +153,7 @@ export class HomePage {
       
               point.update(newVal);
           }
-      
+
           // RPM
           if (chartRpm) {
               point = chartRpm.series[0].points[0];

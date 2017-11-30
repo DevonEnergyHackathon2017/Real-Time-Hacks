@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavParams,NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-infomodal',
   templateUrl: 'infomodal.html'
 })
 export class InfoModalPage {
-
-  constructor(public navCtrl: NavController) {
-
+    myParam: string;
+   constructor(
+    public navCtrl: NavController,
+    params: NavParams
+  ) {
+    this.myParam = params.get('myParam');
   }
 
 }
