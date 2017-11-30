@@ -1,17 +1,77 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar no-border-bottom>
     <ion-title>
       Leaderboard
     </ion-title>
   </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="leaders">
+      <ion-segment-button value="personincharge">
+        PIC Leaders
+      </ion-segment-button>
+      <ion-segment-button value="personalbests">
+        Personal Bests
+      </ion-segment-button>
+      
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Top 10 PIC</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <div [ngSwitch]="leaders">
+    <ion-list *ngSwitchCase="'personincharge'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/gold.jpg">
+        </ion-thumbnail>
+        <h2>Tom Hanks</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/silver.jpg">
+        </ion-thumbnail>
+        <h2>Adelle</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/bronze.jpg">
+        </ion-thumbnail>
+        <h2>Chuck</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Homer</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Steve</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Alice</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'personalbests'">
+      <ion-item>
+        <h2>Stage 5</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Stage 12</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Stage 19</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Stage 3</h2>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
