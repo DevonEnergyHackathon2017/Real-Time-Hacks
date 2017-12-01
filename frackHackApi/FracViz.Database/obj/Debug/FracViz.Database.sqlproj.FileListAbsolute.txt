@@ -1,0 +1,14 @@
+C:\Git\DvnHat\FracViz.Database\bin\Debug\FracViz.Database.dacpac
+C:\Git\DvnHat\FracViz.Database\bin\Debug\FracViz.Database.dll
+C:\Git\DvnHat\FracViz.Database\bin\Debug\FracViz.Database.pdb
+C:\Git\DvnHat\FracViz.Database\obj\Debug\FracViz.Database.dll
+C:\Git\DvnHat\FracViz.Database\obj\Debug\FracViz.Database.pdb
+C:\Git\DvnHat\FracViz.Database\obj\Debug\Model.xml
+C:\Git\DvnHat\FracViz.Database\obj\Debug\refactor.xml
+C:\Git\DvnHat\FracViz.Database\obj\Debug\postdeploy.sql
+C:\Git\DvnHat\FracViz.Database\obj\Debug\predeploy.sql
+C:\Git\DvnHat\REPO\Real-Time-Hacks\frackHackApi\FracViz.Database\bin\Debug\FracViz.Database.dacpac
+C:\Git\DvnHat\REPO\Real-Time-Hacks\frackHackApi\FracViz.Database\bin\Debug\FracViz.Database.dll
+C:\Git\DvnHat\REPO\Real-Time-Hacks\frackHackApi\FracViz.Database\bin\Debug\FracViz.Database.pdb
+C:\Git\DvnHat\REPO\Real-Time-Hacks\frackHackApi\FracViz.Database\obj\Debug\FracViz.Database.dll
+C:\Git\DvnHat\REPO\Real-Time-Hacks\frackHackApi\FracViz.Database\obj\Debug\FracViz.Database.pdb

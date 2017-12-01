@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Stage]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [JobId] INT NOT NULL, 
+    [Number] INT NULL DEFAULT 0, 
+    CONSTRAINT [FK_Stage_Job] FOREIGN KEY ([JobId]) REFERENCES [Job]([Id])
+)

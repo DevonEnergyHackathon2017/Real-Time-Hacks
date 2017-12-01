@@ -9,6 +9,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LivePage } from '../pages/live/live';
 import { InfoModalPage } from '../pages/infomodal/infomodal';
+import { HttpClientModule } from '@angular/common/http';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,10 +22,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingsPage,
     TabsPage,
     LivePage,
-    InfoModalPage
+    InfoModalPage,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column StageAttributeId in table [dbo].[Threshold] is currently  NVARCHAR (256) NOT NULL but is being
+         changed to  INT NOT NULL. Data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Threshold].[StageAttributeId] (Column)
+     Alter
+       [dbo].[Threshold] (Table)
+     Create
+       [dbo].[StageAttribute] (Table)
+       [dbo].[FK_StageAttribute_Stage] (Foreign Key)
+       [dbo].[FK_Threshold_StageAttribute] (Foreign Key)
+
+** Supporting actions
+
+The type for column StageAttributeId in table [dbo].[Threshold] is currently  NVARCHAR (256) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+

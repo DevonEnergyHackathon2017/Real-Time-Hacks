@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="rthfrachackapi" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Git\\DvnHat\\REPO\\Real-Time-Hacks\\frackHackApi\\FracViz\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Git\\DvnHat\\REPO\\Real-Time-Hacks\\frackHackApi\\FracViz\.WebApi\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="FracVizDbContext-Web.config Connection String" description="" value="Data Source=dvnfracvisserver.database.windows.net;Initial Catalog=DVNFracVisualize;Persist Security Info=True;User ID=dvnadmin;Password=DVN_admin;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Git\\DvnHat\\REPO\\Real-Time-Hacks\\frackHackApi\\FracViz\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FracVizDbContext']/@connectionString" />
+  </parameter>
+</parameters>

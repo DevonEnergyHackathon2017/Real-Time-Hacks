@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FracVizDbContext-Web.config Connection String" description="FracVizDbContext Connection String used in web.config by the application to access the database." defaultValue="data source=dvnfracvisserver.database.windows.net;initial catalog=DVNFracVisualize;persist security info=True;user id=dvnadmin;password=DVN_admin;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Git\\DvnHat\\REPO\\Real-Time-Hacks\\frackHackApi\\FracViz\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FracVizDbContext']/@connectionString" />
+  </parameter>
+</parameters>

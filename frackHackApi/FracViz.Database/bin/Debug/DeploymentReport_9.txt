@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Threshold]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Threshold] (Default Constraint)
+     Table rebuild
+       [dbo].[Threshold] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_JobThresholdXRef_Threshold] (Foreign Key)
+       [dbo].[FK_Threshold_StageAttribute] (Foreign Key)
+     Create
+       [dbo].[FK_JobThresholdXRef_Threshold] (Foreign Key)
+       [dbo].[FK_Threshold_StageAttribute] (Foreign Key)
