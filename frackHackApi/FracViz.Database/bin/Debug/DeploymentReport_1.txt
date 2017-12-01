@@ -1,0 +1,44 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Job].[Name] on table [dbo].[Job] must be added, but the column has no default value and does not allow
+         NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a
+         default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment
+         option.
+
+** User actions
+     Alter
+       [dbo].[Job] (Table)
+     Create
+       [dbo].[CostStructure] (Table)
+       [dbo].[CostStructureItem] (Table)
+       [dbo].[JobCostStructueXRef] (Table)
+       [dbo].[JobThresholdXRef] (Table)
+       [dbo].[RateUnitOfMeasure] (Table)
+       [dbo].[Stage] (Table)
+       [dbo].[Threshold] (Table)
+       [dbo].[UnitOfMeasure] (Table)
+       Default Constraint: unnamed constraint on [dbo].[CostStructureItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[CostStructureItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[CostStructureItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Stage] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Threshold] (Default Constraint)
+       [dbo].[FK_CostScheduleItem_CostStructure] (Foreign Key)
+       [dbo].[FK_CostScheduleItem_UnitOfMeasure] (Foreign Key)
+       [dbo].[FK_JobCostStructureXRef_Job] (Foreign Key)
+       [dbo].[FK_JobCostStructueXRef_CostStructure] (Foreign Key)
+       [dbo].[FK_JobThresholdXRef_Job] (Foreign Key)
+       [dbo].[FK_JobThresholdXRef_Threshold] (Foreign Key)
+       [dbo].[FK_RateUnitOfMeasure_NumUnitOfMeasure] (Foreign Key)
+       [dbo].[FK_RateUnitOfMeasure_DenomUnitOfMeasure] (Foreign Key)
+       [dbo].[FK_Stage_Job] (Foreign Key)
+
+** Supporting actions
+
+The column [dbo].[Job].[Name] on table [dbo].[Job] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

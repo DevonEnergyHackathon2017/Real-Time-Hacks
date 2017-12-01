@@ -1,0 +1,182 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+     <ion-thumbnail item-start>
+          <img src="assets/imgs/frachack.png">
+        </ion-thumbnail>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="leaders">
+      <ion-segment-button value="personincharge">
+        PIC Leaders
+      </ion-segment-button>
+      <ion-segment-button value="personalbests">
+        Personal Bests
+      </ion-segment-button>
+      
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="leaders">
+    <ion-list *ngSwitchCase="'personincharge'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/gold.jpg">
+        </ion-thumbnail>
+        <h2>Tom Hanks</h2>
+        <h2 float="right">Rank: Elite</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/silver.jpg">
+        </ion-thumbnail>
+        <h2>Angelina Jolie</h2>
+        <h2 float="right">Rank: Elite</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/bronze.jpg">
+        </ion-thumbnail>
+        <h2>Chuck Chuckersons</h2>
+        <h2 float="right">Rank: Professional</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Homer Simpson</h2>
+        <h2 float="right">Rank: Professional</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Peter Griffin</h2>
+        <h2 float="right">Rank: Novice</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Jennifer Aniston</h2>
+        <h2 float="right">Rank: Novice</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2 style="font-weight:bold">Bill Billings</h2>
+        <h2 style="font-weight:bold" float="right">Rank: Novice</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Charles Barkley</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Darth Vader</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Buzz Lightyear</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Cher</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Summer Student</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Malibu Stacy</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Bruce Willis</h2>
+        <h2 float="right">Rank: Newbie</h2>
+      </ion-item>
+      
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'personalbests'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/gold.jpg">
+        </ion-thumbnail>
+        <h2>Stage 5 -- 11-15-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/silver.jpg">
+        </ion-thumbnail>
+        <h2>Stage 12 -- 03-12-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/bronze.jpg">
+        </ion-thumbnail>
+        <h2>Stage 19 -- 10-29-2015</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 12 -- 02-30-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 2 -- 12-29-2016</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 20 -- 06-30-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 23 -- 07-01-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 19 -- 07-30-2017</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/notawinner.jpg">
+        </ion-thumbnail>
+        <h2>Stage 43 -- 08-21-2017</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

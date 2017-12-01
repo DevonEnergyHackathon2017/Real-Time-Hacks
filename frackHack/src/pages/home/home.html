@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-thumbnail item-start>
+          <img src="assets/imgs/frachack.png">
+        </ion-thumbnail>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Current Stage: 5</h2>
+  <!--<p>
+    Stage #5
+  </p>-->
+  
+
+   <div style=" margin: 0 auto">
+    <div id="container-speed" (click)="openModal()" style="width: 300px; height: 200px; float: left"></div>
+    <div id="container-rpm" (click)="openModal()" style="width: 300px; height: 200px; float: left"></div>
+  </div>
+  <ion-grid>
+ <ion-row>
+   <ion-col col-6><button ion-button block (click)="openModal()" color="secondary">Elapsed Time: 7 hrs</button></ion-col>  
+   <ion-col col-6><button ion-button block (click)="openModal()"color="danger">Treating Pressure</button></ion-col>
+ </ion-row>
+ <ion-row>
+     <ion-col col-6><button ion-button block (click)="openModal()"color="secondary">Prop Conc:  5 lb/US gal</button></ion-col>
+     <ion-col col-6><button ion-button block (click)="openModal()"color="secondary">Hydraulic HP</button></ion-col>
+     </ion-row>
+     <ion-row>
+         <ion-col col-6><button ion-button block (click)="openModal()"color="warning">Slurry Rate: 10 bbl/min</button></ion-col>
+         <ion-col col-6>  <button ion-button block (click)="openModal()"color="secondary">Downtime Optimization</button></ion-col>
+         </ion-row>   
+     <ion-row>
+         <ion-col col-6><button ion-button block (click)="openModal()"color="warning">Total Sand (% of target): 14%</button></ion-col>
+         <ion-col col-6>  <button ion-button block (click)="openModal()"color="warning">Time to Possible Screen Off: 34 min.</button></ion-col>
+         </ion-row>   
+</ion-grid>
+</ion-content>

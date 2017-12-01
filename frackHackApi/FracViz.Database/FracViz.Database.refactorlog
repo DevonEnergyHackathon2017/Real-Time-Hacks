@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="b201a0b1-f34d-47d7-b2b4-e9bcc2629cec" ChangeDateTime="11/29/2017 21:12:51">
+    <Property Name="ElementName" Value="[dbo].[JobCostScheduleXRef].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[JobCostScheduleXRef]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="JobId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b6081efc-ae44-479a-b20d-61b0b9d37222" ChangeDateTime="11/29/2017 21:14:29">
+    <Property Name="ElementName" Value="[dbo].[CostScheduleItemXRef].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CostScheduleItemXRef]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CostScheduleId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9161cc47-3937-498c-83ad-1b2f5f13b04a" ChangeDateTime="11/29/2017 21:16:57">
+    <Property Name="ElementName" Value="[dbo].[RateUnitOfMeasure].[NumCostUnitId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RateUnitOfMeasure]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NumUnitOfMeasureId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="62b9cc38-fe21-4201-b956-7326e70feab6" ChangeDateTime="11/29/2017 21:23:58">
+    <Property Name="ElementName" Value="[dbo].[Threshold].[JobId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Threshold]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="796ed3c3-6e4e-4c9f-aefe-f39a521ed34f" ChangeDateTime="11/29/2017 21:44:04">
+    <Property Name="ElementName" Value="[dbo].[JobThresholdXRef].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[JobThresholdXRef]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="JobId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="365be218-c5f3-4c9c-8e6a-1bb872780ae6" ChangeDateTime="11/29/2017 21:48:40">
+    <Property Name="ElementName" Value="[dbo].[JobCostStructueXRef].[CostScheduleId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[JobCostStructueXRef]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CostStructureId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6cd81333-3568-4e7e-9c3a-90dffaedebf4" ChangeDateTime="11/29/2017 21:50:20">
+    <Property Name="ElementName" Value="[dbo].[CostScheduleItem].[CostScheduleId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CostScheduleItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CostStructureId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f92e6d5-65bc-46b7-bc12-039c231ac1fd" ChangeDateTime="11/30/2017 06:45:01">
+    <Property Name="ElementName" Value="[dbo].[Threshold].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Threshold]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttributeTemplateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2cfef4ea-55c5-4e88-832e-80c076421f4d" ChangeDateTime="11/30/2017 06:49:16">
+    <Property Name="ElementName" Value="[dbo].[Threshold].[AttributeTemplateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Threshold]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5f0f694-7475-41b5-9e41-ba887a2a82bd" ChangeDateTime="11/30/2017 06:53:04">
+    <Property Name="ElementName" Value="[dbo].[Threshold].[AttributeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Threshold]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StageAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f6fdd9ac-94e2-416b-b052-a5bc05da5295" ChangeDateTime="11/30/2017 07:15:06">
+    <Property Name="ElementName" Value="[dbo].[CostStructureItem].[UnitOfMeasureId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CostStructureItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RateUnitOfMeasureId" />
+  </Operation>
+</Operations>
